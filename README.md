@@ -90,3 +90,22 @@ import Head from 'next/head';
   <link rel="icon" href="/favicon.ico" />
 </Head>
 ```
+
+```base
+//components 中构建布局组件 layout.tsx
+import styles from '../styles/layout.module.css';
+
+export default function Layout({ children }) {
+    return <div className={styles.container}>{children}</div>
+}
+
+//styles 中定义layout.module.css
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+    border-bottom-width: 1rem;
+    border-bottom-color: blue;
+}
+```
+
