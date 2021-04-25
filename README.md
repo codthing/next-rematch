@@ -109,3 +109,34 @@ export default function Layout({ children }) {
 }
 ```
 
+```base
+//pages/_app.tsx
+import type { AppProps /*, AppContext */ } from 'next/app'
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+
+//styles/globals.css
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+```
