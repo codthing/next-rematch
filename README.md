@@ -67,8 +67,9 @@ import Link from 'next/link'
 
 ### 静态资产、元数据和CSS
 
+> 图片使用/或者http等绝对路径
+
 ```base
-//使用/或者http等绝对路径
 import Image from 'next/image'
 
 const MyComponent = () => (
@@ -81,8 +82,9 @@ const MyComponent = () => (
 )
 ```
 
+> 标签标题
+
 ```base
-//标签标题
 import Head from 'next/head';
 
 <Head>
@@ -90,9 +92,9 @@ import Head from 'next/head';
   <link rel="icon" href="/favicon.ico" />
 </Head>
 ```
+> components 中构建布局组件 layout.tsx
 
 ```base
-//components 中构建布局组件 layout.tsx
 import styles from '../styles/layout.module.css';
 
 export default function Layout({ children }) {
@@ -108,6 +110,7 @@ export default function Layout({ children }) {
     border-bottom-color: blue;
 }
 ```
+> 全局样式
 
 ```base
 //pages/_app.tsx
