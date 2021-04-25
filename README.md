@@ -50,3 +50,17 @@ yarn start //在生产模式下运行内置的应用程序
   
 6. `yarn dev`
 
+### 路由Link
+
+```base
+import Link from 'next/link'
+
+//在当前页跳转
+<Link href="/">Back to home</Link>
+
+//跳转到新标签页
+<Link href="/">
+  <a className="foo" target="_blank" rel="noopener noreferrer">Hello World</a>
+</Link>
+
+```
