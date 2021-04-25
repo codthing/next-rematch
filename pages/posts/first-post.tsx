@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
+import Layout from '../../components/layout';
 
 export default function FirstPost() {
     return (
-        <>
+        <Layout>
             <Head>
                 <title>First Post</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -18,6 +19,6 @@ export default function FirstPost() {
                     <a className="foo" target="_blank" rel="noopener noreferrer">Hello World</a>
                 </Link>
             </h2>
-        </>
+        </Layout>
     )
 }
