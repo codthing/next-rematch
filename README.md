@@ -64,3 +64,29 @@ import Link from 'next/link'
 </Link>
 
 ```
+
+### 静态资产、元数据和CSS
+
+```base
+//使用/或者http等绝对路径
+import Image from 'next/image'
+
+const MyComponent = () => (
+    <Image
+        src="/images/profile.jpg" // Route of the image file
+        height={144} // Desired size with correct aspect ratio
+        width={144} // Desired size with correct aspect ratio
+        alt="My Name"
+    />
+)
+```
+
+```base
+//标签标题
+import Head from 'next/head';
+
+<Head>
+  <title>First Post</title>
+  <link rel="icon" href="/favicon.ico" />
+</Head>
+```
