@@ -6,10 +6,9 @@ export default function FirstPost() {
     return (
         <>
             <Head>
-                <title>Create Next App</title>
+                <title>First Post</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <h1>First Post</h1>
             <h2 className={styles.title}>
                 <Link href="/">Back to home</Link>
             </h2>
