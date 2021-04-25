@@ -15,4 +15,6 @@ yarn dev //启动开发服务器
 yarn build //生成用于生产的应用程序
 
 yarn start //在生产模式下运行内置的应用程序
+
+`Ctr + c` 停止服务器
 ```
