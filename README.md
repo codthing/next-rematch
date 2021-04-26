@@ -143,3 +143,39 @@ a {
 }
 
 ```
+
+> 自定义PostCSS,使用Tailwind CSS
+
+```base
+// 1. 安装依赖
+yarn add tailwindcss postcss-preset-env postcss-flexbugs-fixes
+
+// 2. 新建 postcss.config.ts
+export default module.exports = {
+    plugins: [
+        'tailwindcss',
+        'postcss-flexbugs-fixes',
+        [
+            'postcss-preset-env',
+            {
+                autoprefixer: {
+                    flexbox: 'no-2009'
+                },
+                stage: 3,
+                features: {
+                    'custom-properties': false
+                }
+            }
+        ]
+    ]
+}
+
+// 3. 新建 tailwind.config.ts 用来删除未使用的CSS
+export default module.exports = {
+    purge: [
+        // './components/MyComponent.tsx',
+    ]
+    // ...
+}
+
+```
