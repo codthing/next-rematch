@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
-import Layout from '../../components/layout';
+import Layout, { siteTitle } from '../../components/layout'
 
 export default function FirstPost() {
     return (
-        <Layout>
+        <Layout home>
             <Head>
-                <title>First Post</title>
+                <title>{siteTitle}</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <h2 className={styles.title}>
